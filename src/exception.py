@@ -1,7 +1,7 @@
 import sys
 import logging
 import traceback
-
+from src.logger import logging 
 def error_message_detail(error, error_detail: sys):
     """
     Extract detailed error message from exception info.
@@ -21,5 +21,6 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
+    
 
 
